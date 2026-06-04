@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Das Charakterstück in der Musik</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #f7f5f0; /* Elegant classic cream background */
+            @bottom-right {
+                content: "Seite " counter(page);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 9pt;
+                color: #7a6e5d;
+            }
+            @bottom-left {
+                content: "Musikalische Gattungslehre: Das Charakterstück";
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 9pt;
+                color: #7a6e5d;
+            }
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #2e2a24;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f0;
+        }
+
+        /* Full bleed banner header on page 1 */
+        .header-banner {
+            margin: -20mm -15mm 25px -15mm;
+            padding: 30px 15mm;
+            background-color: #3d2b1f; /* Deep chocolate/ebony piano-like color */
+            color: #f1e9db;
+            border-bottom: 4px solid #c5a059; /* Elegant gold accent */
+            text-align: center;
+        }
+
+        .header-banner h1 {
+            font-size: 26pt;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .header-banner .subtitle {
+            font-style: italic;
+            font-size: 13pt;
+            color: #c5a059;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 16pt;
+            color: #3d2b1f;
+            border-left: 4px solid #c5a059;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 12pt;
+            color: #5c4033;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-style: italic;
+            page-break-after: avoid;
+        }
+
+        p {
+            font-size: 10.5pt;
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 10.5pt;
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background-color: #eae3d2;
+            border: 1px solid #d4c8b3;
+            border-radius: 4px;
+            padding: 12px 15px;
+            margin: 15px 0;
+            page-break-inside: avoid;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+            page-break-inside: avoid;
+        }
+
+        th {
+            background-color: #5c4033;
+            color: #ffffff;
+            text-align: left;
+            padding: 8px 10px;
+            font-weight: bold;
+            border: 1px solid #5c4033;
+        }
+
+        td {
+            padding: 8px 10px;
+            border: 1px solid #d4c8b3;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0eae1;
+        }
+
+        .composer-section {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+
+        .composer-name {
+            font-weight: bold;
+            color: #3d2b1f;
+            border-bottom: 1px dashed #c5a059;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            font-size: 11pt;
+        }
+
+        .music-quote {
+            text-align: center;
+            font-style: italic;
+            color: #7a6e5d;
+            margin: 20px auto;
+            max-width: 80%;
+            font-size: 11pt;
+            line-height: 1.4;
+            position: relative;
+        }
+        
+        .music-quote::before {
+            content: "«";
+            font-size: 24pt;
+            color: #c5a059;
+            position: absolute;
+            left: -25px;
+            top: -10px;
+        }
+
+        .music-quote::after {
+            content: "»";
+            font-size: 24pt;
+            color: #c5a059;
+            position: absolute;
+            right: -25px;
+            bottom: -20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Das Charakterstück</h1>
+        <div class="subtitle">Das lyrische Klavierfragment der Romantik</div>
+    </div>
+
+    <p>Das <strong>Charakterstück</strong> (auch "pièce de genre") bezeichnet eine der einflussreichsten und charmantesten Gattungen der Klaviermusik, die insbesondere im 19. Jahrhundert ihre absolute Blütezeit erlebte. Es handelt sich um ein meist kürzeres, separates Musikstück, das eine klar definierte, außermusikalische Idee – ein Bild, eine Stimmung, eine dichterische Idee oder einen Charakter – musikalisch einfängt.</p>
+
+    <h2>Zentrale Merkmale und Ästhetik</h2>
+    <p>Im Gegensatz zu den monumentalen, streng durchkomponierten Formen der Wiener Klassik (wie der Sonate oder der Sinfonie) zeichnet sich das Charakterstück durch Intimität, Spontaneität und formale Freiheit aus:</p>
+    <ul>
+        <li><strong>Konzentrierte Kürze:</strong> Meist einteilig oder in einer leicht fassbaren, dreiteiligen Liedform (A-B-A) angelegt.</li>
+        <li><strong>Programmbezug:</strong> Ein sprechender Titel lenkt die Phantasie des Hörers in eine bestimmte Richtung (z. B. <em>„Träumerei“</em> oder <em>„Der Jäger“</em>). Es handelt sich jedoch selten um detaillierte Programmmusik, sondern vielmehr um das Einfangen einer emotionalen Essenz.</li>
+        <li><strong>Das Klavier als Ideal:</strong> Durch die technische Weiterentwicklung des Klaviers im 19. Jahrhundert (Filzhämmer, Repetitionsmechanik, Gussrahmen) wurde es zum perfekten Instrument für feine klangliche Nuancen und intime musikalische Tagebucheinträge.</li>
+        <li><strong>Zyklische Anordnung:</strong> Einzelne Charakterstücke wurden von den Komponisten häufig zu poetischen Alben oder Sammlungen zusammengefasst, um eine lose Geschichte oder eine Galerie von Stimmungen zu erzeugen.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <p><strong>Die Ästhetische Antithese:</strong> Während die <em>Absolute Musik</em> die reine Form und Gesetzmäßigkeit der Töne feiert, bricht das Charakterstück diese Grenzen auf. Es fungiert als Bindeglied zwischen Tonkunst, Poesie und Malerei – ganz im Sinne des romantischen Ideals der universellen Verschmelzung der Künste.</p>
+    </div>
+
+    <h2>Bedeutende Untergattungen des Charakterstücks</h2>
+    <p>Unter dem Dach des Charakterstücks bildete sich eine Vielzahl eigenständiger Typen heraus, die jeweils eine eigene poetische Farbe bedienen:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 25%;">Gattung</th>
+                <th>Wesen und musikalischer Charakter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Nocturne</strong></td>
+                <td>Das „Nachtstück“. Geprägt von verträumter, melancholischer Grundstimmung, oft mit einer weit geschwungenen, gesanglichen Melodie der rechten Hand über einer fließenden Begleitung.</td>
+            </tr>
+            <tr>
+                <td><strong>Impromptu</strong></td>
+                <td>Soll den Charakter einer spontanen, augenblicklichen Improvisation erwecken, ohne dabei jedoch auf eine kunstvolle formale Ausarbeitung zu verzichten.</td>
+            </tr>
+            <tr>
+                <td><strong>Prélude</strong></td>
+                <td>Ursprünglich ein rein funktionales Vorspiel. In der Romantik (v. a. durch Chopin) emanzipierte es sich zur autonomen, oft blitzlichtartig kurzen Kleinform.</td>
+            </tr>
+            <tr>
+                <td><strong>Intermezzo</strong></td>
+                <td>Wörtlich ein „Zwischenspiel“. Bei Johannes Brahms entwickelt es sich zu einem tiefsinnigen, oft grüblerischen und introspektiven eigenständigen Charakterstück.</td>
+            </tr>
+            <tr>
+                <td><strong>Lied ohne Worte</strong></td>
+                <td>Ein von Felix Mendelssohn Bartholdy geprägter Begriff für ein Klavierstück, das exakt den melodischen Aufbau und die Kantabilität eines klassischen Kunstliedes imitiert.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="music-quote">
+        „Töne sind höhere Worte. Musik fängt an, wo die Worte aufhören.“<br>
+        <span style="font-size: 9.5pt; color: #5c4033; font-weight: bold;">— Nach Robert Schumann</span>
+    </div>
+
+    <h2>Wegweisende Komponisten und Meisterwerke</h2>
+    
+    <div class="composer-section">
+        <div class="composer-name">Franz Schubert (1797–1828) — Der Wegbereiter</div>
+        <p>Er schuf mit seinen <em>Impromptus</em> (D 899 & D 935) und den intimen <em>Moments musicaux</em> das eigentliche Fundament. Schuberts Stücke leben vom plötzlichen Wechsel zwischen lyrischer Wärme und tiefem, oft dramatischem Weltschmerz.</p>
+    </div>
+
+    <div class="composer-section">
+        <div class="composer-name">Frédéric Chopin (1810–1849) — Der Poet des Klaviers</div>
+        <p>Chopin erhob das Charakterstück in den Rang absoluter Virtuosität und Eleganz. Seine 21 <em>Nocturnes</em> verzaubern durch harmonische Raffinesse, während seine 24 <em>Préludes op. 28</em> einen psychologischen Parforceritt durch alle Tonarten des Quintenzirkels darstellen.</p>
+    </div>
+
+    <div class="composer-section">
+        <div class="composer-name">Robert Schumann (1810–1856) — Der literarische Psychologe</div>
+        <p>Niemand dachte zyklischer als Schumann. Im <em>Carnaval op. 9</em> porträtiert er Figuren der Commedia dell'arte sowie reale Freunde (wie Chopin und Paganini). In den weltberühmten <em>Kinderszenen op. 15</em> (mit der ikonischen „Träumerei“) blickt er mit den Augen eines Erwachsenen zurück auf die Kindheit.</p>
+    </div>
+
+    <div class="composer-section">
+        <div class="composer-name">Edvard Grieg (1843–1907) — Der Maler des Nordens</div>
+        <p>Mit seinen 10 Heften <em>Lyrischer Stücke</em> setzte er der skandinavischen Natur und Folklore ein Denkmal. Stücke wie „An den Frühling“ oder „Zug der Zwerge“ zeigen die ganze Bandbreite von tonmalerischer Naturschönheit bis hin zu grotesker Rhythmik.</p>
+    </div>
+
+    <h2>Kultureller Kontext und gesellschaftliche Relevanz</h2>
+    <p>Die explosionsartige Verbreitung des Charakterstücks war eng mit dem Aufstieg des Bildungsbürgertums im 19. Jahrhundert verknüpft. Das Klavier avancierte zum Statussymbol und stand im Mittelpunkt der häuslichen Geselligkeit (Hausmusik). Da die Interpretation einer groß angelegten Sonate oft die technischen Möglichkeiten von Amateuren überstieg, boten die kürzeren Charakterstücke den perfekten Zugang zu anspruchsvoller, emotional tiefgehender Musik im eigenen Salon.</p>
+
+</body>
+</html>
